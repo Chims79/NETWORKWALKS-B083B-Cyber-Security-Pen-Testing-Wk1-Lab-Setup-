@@ -96,7 +96,7 @@ A dedicated NAT Network was built within VirtualBox.
 Configuration: Network Name: NatNetwork IPv4 Prefix: 10.0.0.0/24 DHCP: Enabled IPv6: Disabled
 
 
-![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-Cyber-Security-Pen-Testing-Wk1-Lab-Setup-/blob/d27f5b7d41cd3f00f77f3969f36382a5c7c3b7a5/2-nat-network-config.png)
+![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-Cyber-Security-Pen-Testing-Wk1-Lab-Setup-/blob/b3463571644ec24b6d39975f9fed041904e11e3c/Screenshot%202026-09-12%20143808.png)
 
 
 

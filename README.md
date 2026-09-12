@@ -112,6 +112,8 @@ Subnet Mask: 255.255.255.0
 Gateway: 10.0.0.1
 DNS: 8.8.8.8/10.0.0.1
 
+![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-Cyber-Security-Pen-Testing-Wk1-Lab-Setup-/blob/97688979d463c06fe775a1ca49d6a297f2dabf9e/4-kali-network-settings.png)
+
 
 A fixed IP address makes the lab easier to document and lets the Kali machine be referenced consistently in later exercises.
 

@@ -86,7 +86,7 @@ Adapter Type: Intel PRO/1000 MT Desktop
 The VM was allocated:
 RAM: 2048 MB
 
-
+![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-Cyber-Security-Pen-Testing-Wk1-Lab-Setup-/blob/516fd4f85f498e67c69d7531dd7afc499bcbab05/3-kali-desktop.png)
 
 
 

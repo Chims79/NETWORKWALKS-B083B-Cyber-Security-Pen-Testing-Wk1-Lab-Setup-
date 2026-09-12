@@ -1,3 +1,35 @@
+<div align="center">
+
+# 🔐 Cybersecurity Lab Environment Setup
+
+**An isolated virtual lab for penetration testing and ethical hacking practice**
+</div>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/Ver-Virtualbox%20v7.2-0070C0?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Kali%20Linux-v2026.2-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Skill-Linux-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/Network-10.0.0.0%2F24-238F89?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Penetration%20Testing-C00000?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Skill-Virtualization-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/GitHub-404040?style=flat-square&labelColor=0070C0&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kali%20Linux-404040?style=flat-square&labelColor=C00000&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/NetworkWalks-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/Ethical%20Hacking-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Chimanda%20Mbangweta%20CyberSecurity%20Professional-0070C0?style=flat-square&labelColor=000000" />
+</p>
+
+---
+
+           
+
+           
+
+
+
+
+
 # 📌 Project Summary
 This project centers on building a virtual cybersecurity and penetration-testing lab with VirtualBox and Kali Linux.
 The lab exists to provide a controlled space where security tools, network scanning, reconnaissance, vulnerability assessment, and other security-testing tasks can be carried out safely and repeatedly.
@@ -25,6 +57,8 @@ It supports activities including:
 •	Web security testing
 •	Exploitation practice
 •	Security-tool experimentation
+
+
 ⚠️ Note: Only use this laboratory against systems you own or have explicit permission to test. Never use the lab or its tools to attack systems without authorization.
 ________________________________________
 # 🏗️ Lab Layout
@@ -34,19 +68,20 @@ ________________________________________
 Further target machines can be added to this same virtual network in later projects.
 ________________________________________
 ⚙️ Lab Settings
-🧩 Component	⚙️ Configuration
-🖥️ Host OS	Windows 11
-🧠 Host RAM	16 GB
-⚡ Processor	Intel Core i5
-🧰 Hypervisor	VirtualBox 7.2
-🐉 Security OS	Kali Linux 2026.2
-🧠 Kali RAM	2048 MB
-🌐 Virtual Network	NAT Network
-📡 Network Address	10.0.0.0/24
-🐧 Kali IP Address	10.0.0.2/24
-🚪 Default Gateway	10.0.0.1
-🌍 DNS Server	8.8.8.8/10.0.0.1
-🔮 Future VM Range	10.0.0.3–10.0.0.99
+|🧩 Component|	⚙️ Configuration|
+|-------------|------------------|
+|🖥️ Host OS|	Windows 11|
+|🧠 Host RAM	|16 GB|
+|⚡ Processor|	Intel Core i5|
+|🧰 Hypervisor|	VirtualBox 7.2|
+|🐉 Security OS	|Kali Linux 2026.2|
+|🧠 Kali RAM|	2048 MB|
+|🌐 Virtual Network|	NAT Network|
+|📡 Network Addressu|	10.0.0.0/24|
+|🐧 Kali IP Address|	10.0.0.2/24|
+|🚪 Default Gateway	|10.0.0.1|
+|🌍 DNS Server	|8.8.8.8/10.0.0.1|
+|🔮 Future VM Range	|10.0.0.3–10.0.0.99|
 ________________________________________
 # 🪜 Lab Setup Steps
 ### Step 1. Install 7-Zip
@@ -79,12 +114,16 @@ ________________________________________
 ### Step 4. Import Kali Linux
 The Kali Linux virtual machine was pulled from the official Kali Linux website and brought into VirtualBox.
 The VM’s network adapter was set up as shown below:
+```
 Adapter 1
 Attached to: NAT Network
 Network:     NatNetwork
 Adapter Type: Intel PRO/1000 MT Desktop
+```
 The VM was allocated:
+```
 RAM: 2048 MB
+```
 
 ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-Cyber-Security-Pen-Testing-Wk1-Lab-Setup-/blob/516fd4f85f498e67c69d7531dd7afc499bcbab05/3-kali-desktop.png)
 
@@ -107,11 +146,12 @@ ________________________________________
 ### Step 5. Configure the Kali Linux Network
 The Kali Linux network settings were reviewed and set with a fixed IPv4 address.
 Example configuration:
+```
 IP Address: 10.0.0.2
 Subnet Mask: 255.255.255.0
 Gateway: 10.0.0.1
 DNS: 8.8.8.8/10.0.0.1
-
+```
 ![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-Cyber-Security-Pen-Testing-Wk1-Lab-Setup-/blob/97688979d463c06fe775a1ca49d6a297f2dabf9e/4-kali-network-settings.png)
 
 
@@ -126,13 +166,14 @@ The snapshot serves as the clean baseline for the laboratory.
 Should a later exercise alter or break the VM configuration, the machine can be reverted to this baseline.
 ________________________________________
 🔎 Lab Verification
-✅ Test	🧾 Command	🎯 Expected Result
-🌐 Check IP address	ip a	Correct Kali IP displayed
-📡 Test gateway	ping 10.0.0.1	Successful replies
-🌍 Test Internet connectivity	ping 8.8.8.8	Successful replies
-🔎 Test DNS resolution	nslookup networkwalks.com	Domain resolves
-🧰 Verify Nmap	nmap --version	Nmap version displayed
-🔄 Verify snapshot	Restore snapshot and run ip a	Baseline configuration restored
+|✅ Test|	🧾 Command|	🎯 Expected Result|
+|--------|-----------|-------------------|
+|🌐 Check IP address|	ip a	|Correct Kali IP displayed| 
+|📡 Test gateway|	ping 10.0.0.1|	Successful replies|
+|🌍 Test Internet| connectivity	ping 8.8.8.8|	Successful replies|
+|🔎 Test DNS resolution|	nslookup networkwalks.com|	Domain resolves|
+|🧰 Verify Nmap|	nmap --version|	Nmap version displayed|
+|🔄 Verify snapshot|	Restore snapshot and run ip a|	Baseline configuration restored|
 
 Example Results
 IP Address:
@@ -155,7 +196,7 @@ Note: Network interface and connection names can vary from system to system. Stu
 ________________________________________
 
 ### Issue 2. Typing this project in the repository
-I had challenge on how to type this project in GitHub until I watched videos on YouTube on how to type in the repository.
+> I had challenges on how to type this project in GitHub until I watched videos on YouTube on how to type in the repository.
 
 ________________________________________
 # 💡 Key Takeaways
@@ -178,20 +219,25 @@ ________________________________________
 # 🔐 Security & Responsible Use
 This laboratory is meant strictly for educational purposes only.
 ________________________________________
-🔗**Tools & Links**
+# 🔗**Tools & Links**
 •	7-Zip: https://7-zip.org/download.html
+
 •	VirtualBox: https://virtualbox.org/wiki/Downloads
+
 •	Kali Linux: https://kali.org/get-kali
 ________________________________________
 
 # 👤 Author
+
 **Chimanda P Mbangweta**
+
 Cybersecurity Professional B083B
+
 LinkedIn:  https://www.linkedin.com/in/chimanda-p-mbangweta-45972772
 
 ________________________________________
 # 📌Project Information
-**Program Name:** ***Cybersecurity at Networkwalks | Week: 01 | Project: Cybersecurity & Pentesting Lab Setup | Repository: GitHub*
+**Program Name:** *Cybersecurity at Networkwalks | **Week:** 01 | **Project:** Cybersecurity & Pen testing Lab Setup | **Repository:** GitHub*
 
 
 

@@ -29,6 +29,8 @@ It supports activities including:
 ________________________________________
 # 🏗️ Lab Layout
 
+![image alt](https://github.com/Chims79/NETWORKWALKS-B083B-Cyber-Security-Pen-Testing-Wk1-Lab-Setup-/blob/3bc4807b53572edb3875430d238abb7510377fd4/1-lab-architecture.jpeg)
+
 Further target machines can be added to this same virtual network in later projects.
 ________________________________________
 ⚙️ Lab Settings
